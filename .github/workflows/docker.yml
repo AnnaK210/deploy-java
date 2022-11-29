@@ -37,4 +37,4 @@ jobs:
     
       run: |
           docker build docker build --build-arg DB_VAR=${DB_VAR} --build-arg DB_PASSWORD=${DB_PASSWORD} --build-arg DB_USERNAME=${DB_USERNAME} --build-arg DB_HOST=${DB_HOST} --build-arg DB_NAME=${DB_NAME} -t $ECR_REGISTRY/$ECR_REPOSITORY:IMAGE_TAG .
-          docker push $ECR_REGISTRY/$ECR_REPOSITORY:IMAGE_TAG
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
